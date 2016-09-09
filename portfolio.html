@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Origami - WebDesignCrowd</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    
+    <!-- Montserrat: http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Montserrat -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:700,100' rel='stylesheet' type='text/css'> -->
+        
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo">ORIGAMI</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">    	
+          <li><a class="filter active" data-filter="all" href="#"><i class="icon-fullscreen"></i>ALL<span class="arrow-left"></span></a></li>				  		
+          <li><a class="filter" data-filter="icons" href="#"><i class="icon-camera"></i>3D GRAPHICS<span class="arrow-left"></span></a></li>
+          <li><a class="filter" data-filter="web" href="#"><i class="icon-laptop"></i>WEBSITES<span class="arrow-left"></span></a></li>
+          <li><a class="filter" data-filter="portraits" href="#"><i class="icon-picture"></i>PORTRAITS<span class="arrow-left"></span></a></li>
+          <li><a href="features.html"><i class="icon-plus"></i>FEATURES<span class="arrow-left"></span></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>        
+    
+    <!-- Home Section -->
+      <!-- Modal For Gallery -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-bedroom.png" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Bedroom</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-snowscape.jpg" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Snowscape</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-bamboo.jpg" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Bamboo</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+
+      
+    <div id="home" class="section">
+      <div class="container">
+        <div class="gallery portfolio row">
+    		  <ul>
+    		    <li class="col-md-4 col-sm-4 col-xs-12 mix icons" data-cat="icons">
+              <a data-toggle="modal" href="#modal1" class="mix-cover gray">
+                <img class="horizontal" src="img/sintel-bedroom.png" alt="placeholder">
+      		      <span class="overlay"><span class="valign"></span><span class="title">Bedroom</span></span>
+              </a>                	        
+      		  </li>
+    		    <li class="col-md-4 col-sm-4 col-xs-12 mix icons" data-cat="icons">
+              <a data-toggle="modal" href="#modal2" class="mix-cover gray">
+                <img class="horizontal" src="img/sintel-snowscape.jpg" alt="placeholder">
+      		      <span class="overlay"><span class="valign"></span><span class="title">Snowscape</span></span>
+              </a>                
+      		  </li>
+    		    <li class="col-md-4 col-sm-4 col-xs-12 mix icons" data-cat="icons">
+                <a data-toggle="modal" href="#modal3" class="mix-cover gray">
+                  <img class="horizontal" src="img/sintel-bamboo.jpg" alt="placeholder">
+        		      <span class="overlay"><span class="valign"></span><span class="title">Bamboo</span></span>
+                </a>                
+      		  </li>
+      		  <li class="col-md-4 col-sm-4 col-xs-12 mix web" data-cat="web">
+                <a href="https://creativemarket.com/webdesigncrowd/13233-Compass-Horizontal-Gallery-theme" class="mix-cover">
+                  <img class="horizontal" src="img/compass.jpg" alt="placeholder">
+        		      <span class="overlay"><span class="valign"></span><span class="title">Compass</span></span>
+        		    </a>
+      		  </li>
+      		  <li class="col-md-4 col-sm-4 col-xs-12 mix web" data-cat="web">
+                <a href="https://wrapbootstrap.com/theme/streamline-WB058D3H4" class="mix-cover">
+                  <img class="horizontal" src="img/streamline.jpg" alt="placeholder">
+        		      <span class="overlay"><span class="valign"></span><span class="title">Streamline</span></span>
+        		    </a>
+      		  </li>
+      		  <li class="col-md-4 col-sm-4 col-xs-12 mix web" data-cat="web">
+                <a href="https://creativemarket.com/webdesigncrowd/14978-Bolt-Modern-Portfolio-Theme" class="mix-cover">
+                  <img class="horizontal" src="img/bolt.png" alt="placeholder">
+        		      <span class="overlay"><span class="valign"></span><span class="title">Bolt</span></span>
+        		    </a>
+      		  </li>
+      		  <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="portrait">
+                <a href="#" class="mix-cover green">
+                  <img class="vertical" src="img/portrait1.jpg" alt="portrait 1">
+                  <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+        		    </a>
+      		  </li>
+      		  <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="portrait">
+                <a href="#" class="mix-cover">
+                  <img class="vertical" src="img/portrait2.jpg" alt="portrait 2">
+                  <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+        		    </a>
+      		  </li>
+      		  <li class="col-md-4 col-sm-4 col-xs-12 mix portraits" data-cat="portrait">
+                <a href="#" class="mix-cover">
+                  <img class="vertical" src="img/portrait3.jpg" alt="portrait 3">
+                  <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+        		    </a>
+      		  </li>
+      		  
+    		  </ul>
+        </div>        
+    		
+      </div>
+    </div><!-- /.container -->
+    
+    
+
+    
+    <div id="footer" class="section">
+      <br /><p>Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a></p>     
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/init-portfolio.js"></script>
+  </body>
+</html>

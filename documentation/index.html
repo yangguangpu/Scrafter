@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Origami - WebDesignCrowd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="WebDesignCrowd">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Montserrat: http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Montserrat -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>
+    
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	  <div class="container">	   
+      <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></a> 
+	    <a class="brand" href="http://webdesigncrowd.com"><img src="assets/img/logo.png"></a>
+     	<div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="#top" class="active">Top</a></li>
+          <li><a href="#html">HTML Structure</a></li>
+          <li><a href="#element">Elements</a></li>
+          <li><a href="#style">CSS Stylesheets</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="mailto:webdesigncrowd@gmail.com" >Contact us</a></li>
+        </ul>
+  	  </div>
+	  </div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container">
+    
+	<div class="masthead">
+	    <h1>Origami - Multi Purpose Theme</h1>
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a>. Feel free to checkout my other products on <a href="https://creativemarket.com/webdesigncrowd/">Creative Market</a>.<br /><br /> Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email me at <a href="mailto:webdesigncrowd@gmail.com">WebDesignCrowd@gmail.com</a>, Thanks so much!</p>
+  </div> <!-- intro -->
+      
+<section id="html">
+	<div class="page-header">
+	  <h1>HTML Structure <small>General layout and content structure</small></h1>
+	</div>
+    <p>Origami is a multi purpose theme that is great for anything from creative portfolios to corporate websites. There are 4 main sections I want to summarize here. There is the navigation, the services section, the meet the team section and the pricing section.</p>
+
+    <hr />
+
+    <div class="row">
+      <div class="span3">
+        <h3>Navigation</h3>
+        <p>The navigation is a sidebar navigation made up of a Logo and Menu items. The menu items also have spaces for icons and can also be set up for smooth scroll or gallery filtering.<br /><br />To change links in the menu, change the <code>li</code> tags in ul tag with class nav.</p>
+      </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png">ORIGAMI</a>
+  </div>
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <!-- This hidden one just makes scrollspy reset when going above the team section -->
+      <li style="display: none;"><a href="#home"></a></li>
+      <li><a class="scroll" href="#team"><i class="icon-user"></i>TEAM<span class="arrow-left"><span></a></li>
+      <li><a class="scroll" href="#services"><i class="icon-gear"></i>SERVICES<span class="arrow-left"><span></a></li>
+      <li><a class="scroll" href="#work"><i class="icon-briefcase"></i>WORK<span class="arrow-left"><span></a></li>
+      <li><a class="scroll" href="#pricing"><i class="icon-dollar"></i>PRICING<span class="arrow-left"><span></a></li>
+      <li><a class="scroll" href="#contact"><i class="icon-comments"></i>CONTACT<span class="arrow-left"><span></a></li>
+      <li><a href="features.html"><i class="icon-plus"></i>FEATURES<span class="arrow-left"><span></a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div></xmp>
+</pre>
+      </div>
+        </div>
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Services</h3>
+  <p>The services section consists of rows of services. </p>
+  <p>You can change the title of each service in the <code>h3</code> tag, and also change the description text in the <code>p</code> tag. You can also change the icon in the <code>span.circle</code> tag</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div class="service block">
+  <div class="icon-wrapper purple">
+    <span class="valign"></span>
+    <span class="circle"><i class="icon-resize-full"></i></span>
+  </div>
+  <h3>Responsive.</h3>
+  <p>Bolt is responsive meaning it looks great on all devices. </p>                
+</div></xmp>
+</pre>
+      </div>
+        </div>
+        
+<hr />
+<div class="row">
+    <div class="span3">
+  <h3>Team Portraits</h3>
+  <p>The team portraits consists of 3 team member profiles. This is a cutout of one of them.</p>
+  <p>The name is in the <code>h2</code> tag and the member description is in the <code>p</code> tag</p>
+  <p>To change the image change the src in the <code>img</code> tag</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div class="team-portrait block">
+  <div class="title">
+    <h2>Jessica Smith</h2>
+    <h3 class="italic">Graphic Designer</h3>                  
+  </div>
+  <div class="portrait">
+    <a href="#">
+      <img src="img/portrait3.jpg" alt="Team Portrait">              
+      <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+    </a>
+  </div>
+  <p>My name is Jessica Smith. I work mainly as a graphic designer, designing beautiful web elements, buttons, backgrounds, and really anything that is needed.</p>
+</div></xmp>
+</pre>
+      </div>
+        </div>
+        <hr />
+<div class="row">
+    <div class="span3">
+  <h3>Pricing</h3>
+  <p>The pricing tables consists of 3 tables. This is a cutout of one of them. </p>
+  <p>To change the title and icon change the <code>h3</code> tag</p>
+  <p>To change the price change the <code>span.price</code> tag</p>
+  <p>to change the features of each section change the <code>td</code> tags in the tbody.</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div class="wrapper block">
+  <h3 class="text-center"><i class="icon-circle-blank"></i></span>BASIC</h3>
+  <table class="table">
+    <thead>
+      <tr><th><span class="price">9</span></th></tr>
+    </thead>
+    <tbody>
+      <tr><td>One Time Installation</td></tr>
+      <tr><td>No reselling </td></tr>
+      <tr><td>Free Email Support</td></tr>  
+      <tr><td><a class="btn" href="#">PURCHASE NOW</a></td></tr>  
+    </tbody>
+    
+    <a href="#">
+      <span class="overlay"><span class="valign"></span><i class="icon-dollar"></i></span>
+    </a>
+    
+  </table>
+</div></xmp>
+</pre>
+      </div>
+        </div>
+
+  </section> <!-- Markup -->
+
+  <section id="element">
+  	<div class="page-header">
+  	  <h1>Elements <small>HTML Elements</small></h1>
+  	</div>
+      <p>Bolt supports many cool customized bootstrap elements. I will go over elements including the Bootstrap Column system, forms, Collapsible toggle menus, alert boxes, buttons and Modal image previews.</p>
+
+      <hr />
+
+      <div class="row">
+        <div class="span3">
+          <h3>Bootstrap Columns</h3>
+          <p>Bootstrap columns are the easiest way to make things responsive. just define a row div, and you can add columns to them. with tags like col-sm-4, that means you can fit 3 of those into a column on a small device. There are 12 columns in a row. Usually you want to define col-xs-12 as 12 columns because on small screens things will shrink.</p>
+        </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12">
+</div></xmp>
+  </pre>
+        </div>
+          </div>
+
+      <hr />
+
+  <div class="row">
+      <div class="span3">
+    <h3>Forms</h3>
+    <p>These custom forms are made with an icon attachment. It also has simple HTML5 validations.</p>
+    <p>The icon and border will highlight on focus, and the border will stay highlighted if the HTML5 validation is correct.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint">  <form role="form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+        <label for="exampleInputName"><i class="icon-tag"></i></label>
+        <div class="clearfix"></div>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+        <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
+        <div class="clearfix"></div>
+      </div>
+      <div class="form-group textarea">
+        <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+        <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
+        <div class="clearfix"></div>
+      </div>
+      
+      <button type="submit" class="btn btn-large">Send Message</button>
+    </form>
+  </xmp>
+  </pre>
+        </div>
+          </div>
+  <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Collapsibles</h3>
+    <p>A collapsible is a toggle with a header that reveals content.</p>
+    <p>You can change the title of the collapsible in the<code>a</code> tag with class accordion-toggle, and also change the description text in the panel body div.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading active">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </h4><i class="icon-plus"></i><i class="icon-minus"></i>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div></xmp>
+          </pre>
+                </div>
+                  </div>
+  <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Alerts</h3>
+    <p>Alerts are banners that should convey a message and also be dismissible.</p>
+    <p>There are 5 different kinds including the normal alert. There is a alert-warning, alert-error, alert-info, and alert-success</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><div class="alert">
+  <h3>Alert!</h3><p>You have been alerted.</p><a class="close" data-dismiss="alert" href="#" aria-hidden="true"><i class="icon-remove"></i></a>
+</div></xmp>
+  </pre>
+        </div>
+          </div>
+
+  <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Buttons</h3>
+    <p>Buttons are pretty simple to use, just define an anchor with the class "btn". There is also a larger size if you add the class "btn-large" to the btn.</p>
+    <p>You can also add icons into the button.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><a href="#" class="btn">Button</a>
+<a href="#" class="btn"><i class="icon-heart"></i>Button</a>
+<a href="#" class="btn btn-large">Large Button</a>
+<a href="#" class="btn btn-large"><i class="icon-heart"></i>Large Button</a></xmp>
+  </pre>
+        </div>
+          </div>
+  <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Image Overlays</h3>
+    <p>By image overlays I mean in the gallery when you hover over an image it has an effect with a yellow screen and an icon.</p>
+    <p>You can also add icons into the button. This example here is of an overlay in effect in a MixItUp gallery.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><li class="col-md-4 col-sm-4 col-xs-12 mix print" data-cat="print">
+  <a href="#" class="mix-cover">
+    <img class="placeholder" src="http://placehold.it/340x300" alt="placeholder">
+    <div class="overlay"><span class="valign"></span><i class="icon-search"></i></div>
+  </a>
+</li></xmp>
+  </pre>
+        </div>
+          </div>
+
+    </section> <!-- Markup -->
+      
+
+<section id="style">
+    <div class="page-header">
+       <h1>Styles <small>Styles customization and highlights</small></h1>
+     </div>
+
+ <div class="alert alert-info"><a class="close" data-dismiss="alert">×</a> <b>Bootstrap Stylesheets:</b> Bootstrap comes with its own css stylesheet that you should never touch or change. It contains all the styles for the bootstrap framework. I have also included that minimized version and the normal version if you want to go through the bootstrap styles.</div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Stylesheets</h3>
+  <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>style.css</code></td>
+                  <td>Custom Styles for this template. You can edit this and personalize your theme.</td>
+                </tr>
+            <tr>
+                  <td><code>bootstrap.css</code></td>
+                  <td>Bootstrap stylesheet. It is best not to edit this file at all.</td>
+                </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+    <hr />
+    <div class="row">
+        <div class="span3">
+      <h3>How To Edit CSS</h3>
+      <p>Here are some popular things you can edit easily with CSS. Obviously I can't list everything so if there is a specific css question feel free to email me.</p>
+    </div>
+
+    <div class="span9">
+    <pre class="prettyprint linenums">
+    #primaryContent a {
+        color: #someColor;
+        font-size: 40px;
+     	font-family: Arial, Helvetica, sans-serif;
+    }
+    #item {
+        background-color: #someColor;
+    }
+    </pre>
+          </div>
+            </div>
+    <hr />
+    <div class="row">
+	<div class="span3">
+	   <h3>CSS Structure</h3>
+	   <p>The style.css sheet contains all my styles. It's organized so you can easily find what styles correspond to what.</p>
+	</div>
+
+<div class="span9">	
+<pre class="prettyprint linenums">
+/*  NAVBAR
+ *    stylings for fixed navbar
+ */
+
+CSS code
+
+/*  SECTION
+ *    stylings for sections
+ */
+
+CSS code
+
+/*  SERVICES
+ *    stylings for services content
+ *    image background parallax
+ *    Supports grids of multiple sizes (half, thirds, quarters, etc.)
+ */
+
+CSS code
+
+/*  PORTFOLIO
+ *    stylings for portfolio
+ */
+
+CSS code
+
+/*  BLOG
+ *    masonry grid
+ */
+
+CSS code
+
+etc, etc.
+					</pre>
+      </div>
+        </div>
+  </section>
+      <!-- Styles -->
+      
+      <section id="javascript">
+	<div class="page-header">
+	  <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+	</div>
+	<div class="alert alert-info"><a class="close" data-dismiss="alert">×</a> <b>Bootstrap Javascript:</b> Bootstrap comes with its own javascript file that you should never touch or change. It contains all the scripts for the bootstrap framework. I have also included that minimized version.</div>
+	<div class="row">
+	  <div class="span3">
+	    <h3>JavaScript Files</h3>
+	    <p>Only edit init.js, the rest of the files are plugins or libraries that shouldn't be edited</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Tag</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>init.js</code></td>
+	          <td>This is the custom javascript that initializes everything like the carousels, web elements and more.</td>
+	        </tr>
+	        <tr>
+	          <td><code>init-portfolio.js</code></td>
+	          <td>This is the custom javascript that initializes everything for the alternative portfolio layout.</td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery-1.9.1.min.js</code></td>
+	          <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+	        </tr>
+	        <tr>
+	          <td><code>bootstrap.js</code></td>
+	          <td>This is the Bootstrap framework javascript that enables all of its functionalities. Do not edit this.</td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery.mixitup.js</code></td>
+	          <td>This is jQuery plugin that enables the portfolio sorting and categorization.</td>
+	        </tr>
+	        <tr>
+	          <td><code>masonry.pkgd.min.js</code></td>
+	          <td>This is jQuery plugin that enables the portfolio sorting and categorization.</td>
+	        </tr>
+	        <tr>
+	          <td><code>masonry-init.js</code></td>
+	          <td>This initializes the code for masonry. This is separate from the main init file because not all pages need masonry.</td>
+	        </tr>
+	        <tr>
+	          <td><code>respond.min.js</code></td>
+	          <td>This enables css media queries in internet explorer browsers 8 and below. It is simply for cross browser compatibility.</td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+	<hr />
+  	<div class="row">
+    	<div class="span3">
+    	  <h3>Carousel Featured Slider</h3>
+    	  <p>The featured image slider uses bootstraps carousel. You can look up the bootstrap docs to further customize your carousel.</p>
+        <p>There are carousel indicators that show which index the slide is on.</p>
+        <p>The actual sides are composed of a couple parts. You can change the image in the <code>image-wrapper</code> div. You can change the title and the description <code>carousel-caption</code> div.</p>
+    	</div>
+      <div class="span9">
+        <pre class="prettyprint js linenums:103">
+        <xmp class="prettyprint"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#" class="image-wrapper">
+        <img src="img/sintel-bedroom.png" alt="placeholder">                                  
+        <span class="overlay"><span class="valign"></span><i class="icon-link"></i></span>                    
+      </a>
+      <div class="carousel-caption">
+        <h2>Sintel Bedroom</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="icon-angle-left"></i></a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><i class="icon-angle-right"></i></a>
+</div></xmp>
+        </pre>
+      </div>
+    </div>
+
+    <hr />
+
+	<div class="row">
+  	<div class="span3">
+  	  <h3>MixItUp Portfolio / Gallery</h3>
+  	  <p>The gallery uses a jQuery plugin called mixitup where you can tag items with certain categories which you can then hide and show depending on specific categories.</p>
+  	  <p>You can assign categories to your gallery items by adding a category name as a class to the <code>li</code> tags with class mix</p>
+  	  <p>For the button filters, you can add data-filters that correspond to classes you assign gallery items.</p>
+  	</div>
+    <div class="span9">
+      <pre class="prettyprint js linenums:103">
+      <xmp class="prettyprint"><div class="controls">	
+  <a class="btn filter" data-filter="all">SHOW ALL</a>
+  <a class="btn filter" data-filter="category_1">CATEGORY 1</a>
+  <a class="btn filter" data-filter="category_2">CATEGORY 2</a>
+  <a class="btn filter" data-filter="category_3">CATEGORY 3</a>
+  <a class="btn filter" data-filter="category_1 category_3">CATEGORY 1 &amp; 3</a>
+</div>
+<div class="gallery" class="row">
+  <li class="col-md-4 col-sm-4 col-xs-12 mix category_1" data-cat="1">
+    <a href="#" data-toggle="modal" data-target="#myModal" class="mix-cover">
+      <img src="img/sintel-bedroom.png">
+      <span class="cover"><h2>Sintel Bedroom</h2></span>
+    </a>
+  </li>
+  <li class="col-md-4 col-sm-4 col-xs-12 mix category_2" data-cat="3">
+    <a href="#" class="mix-cover">
+      <img src="img/ishtar-alley.png">
+      <span class="cover"><h2>Ishtar Alley</h2></span>
+    </a>  
+  </li>
+  <li class="col-md-4 col-sm-4 col-xs-12 mix category_3" data-cat="3">
+    <a href="#" class="mix-cover">
+      <img src="img/sintel-wallpaper-ishtar.jpg">
+      <span class="cover"><h2>Ishtar Wallpaper</h2></span>
+    </a>
+  </li>
+</div></xmp>
+      </pre>
+    </div>
+  </div>
+  
+  <hr />
+	<div class="row">
+	<div class="span3">
+	  <h3>Masonry Blog</h3>
+	  <p>Masonry is a plugin that allows things in a row to fit nicely together without unnecessary whitespace.</p>   
+	  <p>Here is the initializing code. If you wanna customize any masonry options it would go inside the <code>$container.masonry({</code> block.</p>
+	</div>
+<div class="span9">
+<pre class="prettyprint js linenums:103">
+  var $container = $('.masonry-grid');
+  
+  $container.imagesLoaded(function(){
+    $container.masonry({
+      itemSelector : '.item',
+      gutter : 0
+    });
+    $(".item").css("opacity", "1");
+  });
+</pre>
+      </div>
+        </div>
+  </section><!-- JavaScript -->
+      
+      
+
+	<section id="credits">
+	  <div class="page-header">
+	    <h1>Credits Files <small>Some of your credits and sources</small></h1>
+	  </div>
+	  <p>I've used the following images, scripts or other files as listed.</p>
+	  <h3>Framework</h3>
+	  <ol>
+	    <li><a href="http://getbootstrap.com/2.3.2/">Bootstrap</a> <small>&mdash; Version 3.0.0 </small></li>
+	  </ol>
+	  <h3>JavaScript</h3>
+	  <ol>
+	    <li><a href="http://jquery.com/">jQuery</a> <small>&mdash; Popular Javascript library </small></li>
+	    <li><a href="http://mixitup.io/">MixItUp</a> <small>&mdash; A CSS3 and jQuery Filter and Sort Plugin </small></li>
+	    <li><a href="http://masonry.desandro.com/">Masonry</a> <small>&mdash; A Cascading grid layout library </small></li>
+	    <li><a href="http://masonry.desandro.com/">ImagesLoaded</a> <small>&mdash; A plugin that fires when all images are loaded </small></li>
+	    <li><a href="https://github.com/scottjehl/Respond">Respond</a> <small>&mdash; Enables CSS Media Queries in IE 8 and below </small></li>
+	  </ol>
+	  <h3>Images</h3>
+	  <ol>
+	    <li><a href="http://sintel.org">Sintel</a> <small>&mdash; Gallery Images from Open Blender Movie, Sintel</small></li>
+	    <li><a href="http://freerangestock.com">Portrait Images</a> <small>&mdash; Images from FreeRangeStock</small></li>
+	    <li><a href="http://dribbble.com/shots/984042-iPhone-iPad-Freebie-rebound-Thunderbolt">Flat Mac Devices</a> <small>&mdash; Flat Mac Device Freebies used in some preview images</small></li>
+	    <li><a href="https://www.iconfinder.com/iconsets/origami-birds">Origami Birds</a> <small>&mdash; Used in the logo</small></li>
+	  </ol>
+	</section><!-- Credits -->
+      
+
+
+      <hr />
+
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. Email me at <a href="mailto:webdesigncrowd@gmail.com" >Webdesigncrowd@gmail.com</a> Or message me on <a href="https://creativemarket.com/webdesigncrowd/">Creative Market</a></p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
